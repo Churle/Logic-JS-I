@@ -1,6 +1,19 @@
-p {
-    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+p { /*Definindo posicionamento, estilo e uppercase */
+    font-family: "Courier New", 'Courier New', Courier, monospace;
     letter-spacing: 1px;
     text-transform: uppercase;
-    text-align: center;
+    text-align: center; /* choosing where the <p> ll be on the page */
+    /* Bordas e Cores */
+    border: 2px solid rgb(116, 1, 155);
+    background-color:rgb(153, 233, 153); /* Color of the limited area inside the boarder */
+    color: rgba(200, 0, 150, 1); /* color on the writing */
+    box-shadow: 1px 1px 2px rgb(130,0, 249, 1); /* kind of neon on the boarder */
+    border-radius: 33%; 
+    padding: 10px 10px; /* thickness of padding area */
+    display:inline-block; /* this shows how we want the whole element to be */
+    cursor:pointer; /* this show the pointer format when passing on the element */
+    /* Highlight the first paragraph */
+    font-weight:bolder; 
+    color: #f50ae5; /* Pink */
+    
   };
