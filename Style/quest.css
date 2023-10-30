@@ -8,7 +8,7 @@ body {
   box-shadow: 2px 2px 100px rgba(0, 50, 80, 1);
   }
 
-p { /*Defining position inside the <p>, estyle and properties */
+.primeiro-paragrafo { /*Defining position inside the <p>, estyle and properties */
     font-family: "Courier New", 'Courier New', Courier, monospace;
     letter-spacing: 10px;
     text-transform: uppercase;
@@ -30,4 +30,15 @@ p { /*Defining position inside the <p>, estyle and properties */
     margin: 0 auto; /* Center it */
     /*cor do fundo*/
    };
+   /* Estilos para o segundo parágrafo */
+.segundo-paragrafo {
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 10px;
+  color:antiquewhite ;
+  box-shadow: 2px 2px 30px rgba(rgb(76, 0, 111), 1);
+  background-color: #f50ae5;
+  border: 5px rgba(red, rgb(2, 120, 2), blue, alpha);
+  font-size: 18px;
+  /* Adicione mais estilos conforme necessário */
+}
 
