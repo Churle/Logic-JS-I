@@ -2,7 +2,6 @@ body {
   border: 1px solid rgb(44, 0, 124);
   background-color: rgb(1, 14, 20);
   padding: 50px 45px;
-  display:block;
   border-radius: 50px;
   background-clip: padding-box;
   box-shadow: 2px 2px 100px rgba(0, 50, 80, 1);
@@ -19,7 +18,7 @@ body {
     color: rgba(200, 0, 150, 1); /* color on the writing */
     box-shadow: 2px 2px 30px rgb(130,0, 249, 1); /* shadow on the boarder that i can move or get it bigger */
     border-radius:30px; 
-    padding: 15px 40px; /* thickness of padding area */
+    padding: 20px 50px; /* thickness of padding area */
     display:flex; /* this shows how we want the whole element to be */
     cursor:pointer; /* this show the pointer format when passing on the element */
     /* Highlight the first paragraph */
@@ -29,16 +28,23 @@ body {
     max-width: 600px; /* Ajust maximum width */
     margin: 0 auto; /* Center it */
     /*cor do fundo*/
-   };
+  }
    /* Estilos para o segundo parágrafo */
 .segundo-paragrafo {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Courier New", 'Courier New', Courier, monospace;
   letter-spacing: 10px;
-  color:antiquewhite ;
-  box-shadow: 2px 2px 30px rgba(rgb(76, 0, 111), 1);
-  background-color: #f50ae5;
-  border: 5px rgba(red, rgb(2, 120, 2), blue, alpha);
-  font-size: 18px;
-  /* Adicione mais estilos conforme necessário */
+  text-transform: uppercase;
+  color:antiquewhite;
+  box-shadow: 2px 2px 30px rgb(115, 0, 247);
+  background-color:#d1c301;
+  border: 5px solid rgb(116, 1, 155);
+  font-size:18px;
+  padding:20px 50px;
+  display:flex;
+  font-weight:bolder;
+  max-width:600px;
+  margin:0 auto;
+  border-radius:30px; 
+  cursor: pointer;
 }
 
