@@ -1,0 +1,37 @@
+body{
+    background-color: dimgray;
+}
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 10px;
+    cursor:pointer;
+    font-weight: bolder;
+    margin:0 auto;
+    list-style-type:none;
+    padding-left:0; /* Remover o recuo padrão da lista */
+    text-transform:uppercase;
+    text-align: center;
+    border: 5px solid whitesmoke;
+    background-color: rgb(20, 220, 127);
+    max-width: 100px;
+    box-shadow: 3px 3px 50px rgb(223, 248, 20, 2000);
+    box-sizing: border-box;
+    padding: 2px 15px;
+    border-radius: 80px;
+    align-items: center;
+}
+
+/* colocando css no <container text> */
+.container{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(243, 243, 243);
+    width: 1510px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 25px; /* Esse aqui faz a borda curvar */
+    border: 6px solid rgb(223, 248, 20);
+    box-shadow: 4px 4px 50px rgb(20, 220, 127, 1);
+    position:relative;
+}
