@@ -19,6 +19,7 @@ button_day.addEventListener("click", function() {
     
 });
 
+// TAREFA #2 ----------------------------------------------------------------------------
 // referenciando pelo ID 
 var button_N = document.getElementById("button_N");
 
@@ -54,3 +55,5 @@ if (resposta2 !==null){
 
     }
 }});
+
+// Tarefa #3 -----------------------------------------------------------------------------
