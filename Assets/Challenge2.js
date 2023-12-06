@@ -8,23 +8,36 @@ button_day.addEventListener("click", function() {
     // Abrindo o prompt quando o botão é clicado
     var resposta1= prompt("Digite o dia da semana em que estamos:");
         console.log(resposta1);
+       
+    if (resposta1 !== null) {
+        // Verificar se o usuário pressionou "Cancelar" na janela do prompt
+        if (resposta1 === "") {
+            alert('Você fechou a janela do prompt.');
+        } else {
+            // Verificar se a resposta é um número
+            if (!isNaN(resposta1)) {
+                alert('Você digitou um número. O prompt será cancelado.');
+            } else {
+                // Se não for um número, continuar com as operações
+                resposta1 = resposta1.trim().toLowerCase();
 
-      // Exibindo um alerta com a resposta do prompt
-      if (resposta1 !== null) {
-        resposta1 = resposta1.	trim().toLowerCase();
-        alert("Você digitou: " + resposta1);
-        button_day.textContent = "DIA DA SEMANA: " + resposta1;
-
-    } if (resposta1 == 'sabado')  {
-        alert("Bom Final de Semana!!!");
-        button_day.textContent = "DIA DA SEMANA: " + resposta1;
-    } else if (resposta1 == 'domingo') {
-        alert('Bom Final de Semana !');
-        button_day.textContent = "DIA DA SEMANA: " + resposta1;
+                if (resposta1 === 'sabado') {
+                    alert('Voce digitou: '+ resposta1);
+                    alert("Bom Final de Semana!!!");
+                    button_day.textContent = "DIA DA SEMANA: " + resposta1;
+                } else if (resposta1 === 'domingo') {
+                    alert('Voce Digitou: '+ resposta1);
+                    alert('Bom Final de Semana!');
+                    button_day.textContent = "DIA DA SEMANA: " + resposta1;
+                } else {
+                    alert('Voce Digitou: '+ resposta1);
+                    alert('Boa Semana de Trabalho');
+                }
+            }
+        }
     } else {
-        alert ('Boa Semana de Trabalho');
+        alert('Você cancelou o prompt');
     }
-    
 });
 
 // TAREFA #2 ----------------------------------------------------------------------------
