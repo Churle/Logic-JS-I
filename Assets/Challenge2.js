@@ -47,9 +47,9 @@ var button_N = document.getElementById("button_N");
 // Adicionando um ouvinte de evento ao botão !  o CLICK e o evento e o function e a funcao a ser executada que ira exibir o prompt!
 button_N.addEventListener("click", function() { 
 
-//Abrir um prompt quando o botao e clicado
-var resposta2 = prompt("Digite seu saldo entre 0 a 200");
-console.log(resposta2);
+    //Abrir um prompt quando o botao e clicado
+    var resposta2 = prompt("Digite seu saldo entre 0 a 200");
+    console.log(resposta2);
 
 //Exibir um alerta com a resposta do prompt verificando se e nulo
 if (resposta2 !==null){ 
@@ -77,4 +77,36 @@ if (resposta2 !==null){
     }
 }});
 
-// Tarefa #3 -----------------------------------------------------------------------------
+// Tarefa 3 ------------------------------------------------------------------------------------------------
+
+// Referenciando pelo ID
+var button_points = document.getElementById("button_points");
+
+// Criando um ouvinte para o Button, fazendo com que a função exiba o prompt
+button_points.addEventListener("click", function() {
+    var resposta3 = prompt("Digite seu saldo de pontos no jogo"); // abrindo prompt quando o button for clicado
+    console.log(resposta3);
+
+    if (resposta3 !== null) { // verificando se é diferente de nulo
+        if (resposta3 !== "") { // verificando se a resposta não é uma string vazia
+            var numero = parseInt(resposta3); // convertendo a resposta para número
+
+                if (!isNaN(resposta3)) { // verificando se é um número
+                alert('Você digitou: ' + resposta3);
+                button_points.textContent = "Sua Pontuação é: " + resposta3;
+                
+                // verificando se o numero e maior ou igual a 150 
+                if (numero >= 150)
+                alert ("Parabens voce venceu");
+                else alert("Reinicie o jogo e tente novamente");
+
+             } else {
+                alert("Você digitou um valor não numérico.");
+             }
+         } else {
+            alert("Você digitou uma string vazia.");
+            }
+        } else {
+           alert("Você cancelou o prompt.");
+     }
+});
