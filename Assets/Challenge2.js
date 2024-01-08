@@ -110,3 +110,22 @@ button_points.addEventListener("click", function() {
            alert("Você cancelou o prompt.");
      }
 });
+
+// Tarefa 4 -----------------------------------------------------------------------------------------------------------
+
+// pegando o elemento pela id
+var button_name = document.getElementById("button_name"); // Corrigindo getElementById
+
+// Adicionando um ouvinte e chamando a função
+button_name.addEventListener("click", function() {
+    var resposta4 = prompt("Digite seu nome");
+    console.log(resposta4);
+
+    if (!isNaN(resposta4)) { // Corrigindo a condição, deve ser isNaN, e adicionando negação
+        alert("Você digitou um número. Tente novamente.");
+    } else {
+        alert("Bem-vindo, " + resposta4);
+        button_name.textContent = "Bem-vindo, " + resposta4;
+    }
+});
+
